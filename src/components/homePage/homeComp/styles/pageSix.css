@@ -1,0 +1,45 @@
+.home-page-6{
+    height: 90vh;
+    padding: 80px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-page-6 h2{
+    width: 90%;
+    font-size: 2.3rem;
+    font-weight: 400;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+.home-page-6 div{
+    height: 270px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.home-page-6 div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.home-page-6 div div h3{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.home-page-6 div div p{
+    font-size: 1.2rem;
+}
+.home-page-6 div div img{
+    height: 120px;
+    scale: 0.3;
+    opacity: 0;
+}
+.show-image{
+    transition:all 600ms ease-in;
+    opacity: 1!important;
+    scale: 1!important;
+}

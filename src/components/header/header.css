@@ -1,0 +1,54 @@
+header{
+    /* max-width: 1440px; */
+    width: 98vw;
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.company-logo{
+    height: 75px;
+    margin: 0px 0px 0px 10px;
+}
+a.nav-links{
+    text-decoration: none;
+    color: black;
+    font-size: 1.38rem;
+    font-weight: 700;
+    margin: 0px 10px 10px 10px;
+}
+a.nav-links:hover{
+    opacity: 0.6;
+}
+.download-btns{
+    height: 45px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+}
+.download-btns div{
+    height: 49px;
+    width: 190px;
+    border: 2px solid black;
+    border-radius:30px;
+    display: flex;
+    margin: 0px 30px 0px 10px;
+}
+.download-btns div a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89px;
+}
+.download-btns div a.android-logo{
+    border-right: 2px solid black;
+}
+.download-btns div a img{
+    height: 33px;
+    transition: all 150ms ease-out;
+}
+.download-btns div a img:hover,.download-btns a img:hover{
+    transform: rotate(12deg);
+}
