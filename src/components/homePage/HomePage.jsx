@@ -5,6 +5,8 @@ import PageThree from "./homeComp/pageThree";
 import PageFour from "./homeComp/pageFour";
 import PageFive from "./homeComp/pageFive";
 import PageSix from "./homeComp/pageSix";
+import PageSeven from "./homeComp/pageSeven";
+import PageEight from "./homeComp/pageEight";
 
 
 function HomePage(){
@@ -18,6 +20,8 @@ function HomePage(){
         <PageFour />
         <PageFive />
         <PageSix />
+        <PageSeven />
+        <PageEight />
         </>
     )
 }

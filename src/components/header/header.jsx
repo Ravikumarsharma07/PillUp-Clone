@@ -1,19 +1,28 @@
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import "./header.css"
-
+import MenuIcon from '@mui/icons-material/Menu';
+import { useEffect, useState } from 'react';
 
 function Header(){
+    const [isToggleBtn , setIsToggleBtn] = useState(true);
+    function clickEvent(){
+        setIsToggleBtn(!isToggleBtn);
+    }
+
 
     return (
         <>
         <header>
-            <Link to="/" ><img className="company-logo" src="https://pillup.com/assets/logo.svg" alt="company logo" /> </Link>
-            <Link className="nav-links"  to="/WhyUs">Why Us</Link>
-            <Link className="nav-links" to="/HowItWorks">How It Works</Link>
-            <Link className="nav-links" to="/Blogs">Blogs</Link>
-            <Link className="nav-links" to="/BrandStory">Brand Story</Link>
-            <Link className="nav-links" to="AboutUs">About Us</Link>
+            
+            <Link onClick={()=>setIsToggleBtn(false)} to="/" ><img className="company-logo" src="https://pillup.com/assets/logo.svg" alt="company logo" /> </Link>
+            <div className={!isToggleBtn?"nav-links-container":"nav-links-container-active"} >
+            <Link onClick={()=>setIsToggleBtn(false)} className="nav-links"  to="/WhyUs">Why Us</Link>
+            <Link onClick={()=>setIsToggleBtn(false)} className="nav-links" to="/HowItWorks">How It Works</Link>
+            <Link onClick={()=>setIsToggleBtn(false)} className="nav-links" to="/Blogs">Blogs</Link>
+            <Link onClick={()=>setIsToggleBtn(false)} className="nav-links" to="/BrandStory">Brand Story</Link>
+            <Link onClick={()=>setIsToggleBtn(false)} className="nav-links" to="AboutUs">About Us</Link>
+            </div>
 
             <div className="download-btns">
                 <div>
@@ -27,6 +36,7 @@ function Header(){
                 <a href='tel:+918920878094'>
                     <img src='https://pillup.com/assets/callIcon.svg' alt='call icon'/>
                 </a>
+            <button className='navbar-toggle-btn' onClick={()=>{clickEvent()}} ><MenuIcon /></button>
             </div>
 
         </header>  

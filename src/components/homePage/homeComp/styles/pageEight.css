@@ -1,0 +1,25 @@
+.page-8-container{
+    height: 100vh;
+    position: relative;
+    top: -30px;
+}
+.upper-curved-div{
+    height: 50px;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background-color: #ffe1e1;
+}
+
+
+.page-8-container .page-8-main-contnent{
+    background-color: #ffe1e1;
+
+    padding: 50px 80px;
+
+}
+.page-8-main-contnent h2{
+    font-size: 2.3rem;
+}
+.page-8-container img{
+    width: 100%;
+}

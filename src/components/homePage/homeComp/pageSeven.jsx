@@ -14,3 +14,5 @@ function PageSeven() {
     </section>
   );
 }
+
+export default PageSeven;

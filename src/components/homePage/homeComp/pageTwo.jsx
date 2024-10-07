@@ -8,8 +8,6 @@ function PageTwo(){
         window.addEventListener("scroll", ()=>{
             if(window.scrollY > 620){
                 setId("animate-image")
-            }else{
-                setId("")
             }
         })
 
