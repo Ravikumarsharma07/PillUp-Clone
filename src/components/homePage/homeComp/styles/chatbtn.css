@@ -157,3 +157,169 @@
     border-radius: 50%;
     height: 42px;
 }
+
+
+
+@media (max-width: 576px) {
+    #chat-ui-closed{
+        height: 300px;
+        width: 0px;
+        position: fixed;
+        top: 300px;
+        right: 100px;
+    }
+    #chat-ui{
+        height: 310px;
+        width: 360px;
+        border-radius: 13px;
+        margin: 6px;
+        background-color: rgb(136, 136, 136);
+        scale: 1;    
+        position: fixed;
+        top: 240px;
+        right: 450px;
+        box-shadow: -1px -1px 10px rgb(158, 158, 158);
+        transition: all 200ms ease-out;
+        z-index: 20!important;
+        scale: 0.7;
+    }
+    
+    #chat-ui .chat-heading{
+        height: 80px;
+        background-color: #0A5F54;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: grid;
+        grid-template-columns: 70px auto 50px;
+        grid-template-rows: 40px 40px;
+        filter: blur(1px1px 10px rgb(0, 0, 0));
+    }
+    .chat-heading img{
+        border-radius: 50%;
+        height: 50px;
+        align-self: center;
+        justify-self: center;
+        grid-row:1/3;
+    }
+    .chat-heading h3{
+        color: white;
+        margin: 11px 0px 0px 0px;
+        font-size: 21px;
+    }
+    .chat-heading p{
+        grid-column: 2/3;
+        font-size: 14px;
+        color: white;
+    }
+    .chat-heading button{
+        height: 40px;
+        width: 40px;    
+        align-self: center;
+        justify-self: center;
+        grid-row: 1/3;
+        grid-column: 3/4;
+        background-color: transparent;
+        color: rgb(197, 197, 197);
+        border: none;
+        cursor: pointer;
+    }
+    .chat-main{
+        /* background-color: #fff; */
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaU2hd4HZ8Xf4cvaK1fdfWbILM1Tvm765kAULF-2_R0BQja9v_78esXUpNXZNx4N1jfI&usqp=CAU");
+        height: 140px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* mix-blend-mode: color-burn; */
+    }
+    .chat-main-div::before{
+        content: '' !important;
+        position: absolute !important;
+        top: 98px !important;
+        left: 24px !important;
+        margin-left: -8px !important;
+        width: 0 !important;
+        height: 0 !important;
+        border-bottom: solid 10px transparent !important;
+        border-right: solid 8px rgb(255, 255, 255) !important;
+    }
+    .chat-main div{
+        height: 100px;
+        width: 290px;
+        margin: 0px 0px 5px 22px;
+        padding: 5px 9px;
+        border-radius: 8px;
+        border-top-left-radius: 0px;
+        background-color: rgb(255, 255, 255);
+        font-size: 16px;
+        z-index: 1;
+    }
+    .chat-main div p{
+        /* height: 1.3rem; */
+        margin: 4px 0px 0px 0px;
+    }
+    .chat-footer{
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        border-bottom-left-radius: 13px;
+        border-bottom-right-radius: 13px;
+        
+    }
+    .chat-footer a{
+        height: 40px;
+        width: 300px;
+        border: none;
+        border-radius: 35px;
+        background-color: #08cf65;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 7px 0px 0px 0px;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .chat-footer p{
+        font-size: 13px;
+    }
+    .chat-container button#whatapp-logo{
+        height: 48px;
+        width: 150px;
+        padding: 3px 10px 3px 4px ;
+        background-color:#25d366;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+        border-radius: 35px;
+        border: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: all 300ms ease-out;
+        position: fixed;
+        top: 80%!important;
+        right: 3%;
+        transition: all 100ms ease-out;
+        z-index: 20!important;
+        font-size: 16px;
+        scale: 0.9;
+    }
+    .chat-container button#whatapp-logo:hover{
+        box-shadow: 1px 1px 5px rgb(59, 59, 59);
+    }
+    .whatsapp-btn-closed{
+        position: fixed;
+        height: 48px;
+        transition: all 100ms ease-out;
+        width: 48px!important;
+        /* scale: 1.2; */
+    }
+    .chat-container button img{
+        border-radius: 50%;
+        height: 42px;
+    }
+}

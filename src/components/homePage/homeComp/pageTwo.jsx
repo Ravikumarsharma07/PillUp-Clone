@@ -4,12 +4,24 @@ import "./styles/pageTwo.css"
 function PageTwo(){
 
     const [imageId, setId] = useState("");
-    
-        window.addEventListener("scroll", ()=>{
-            if(window.scrollY > 620){
-                setId("animate-image")
-            }
-        })
+
+        if(window.innerWidth < 576){
+            window.addEventListener("scroll", ()=>{
+                if(window.scrollY > 450){
+                    setId("animate-image");
+                }
+            })
+        }else{
+            window.addEventListener("scroll", ()=>{
+                if(window.scrollY > 580){
+                    setId("animate-image")
+                }
+            })
+        }
+
+        
+
+
 
     return (
         <div className="home-section-two">

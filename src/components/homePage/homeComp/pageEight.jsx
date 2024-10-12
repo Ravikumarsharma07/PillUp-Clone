@@ -1,21 +1,29 @@
 import "./styles/pageEight.css";
+import {useState} from "react";
+import AccessibilityIcon from '@mui/icons-material/Accessibility';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 
 function PageEight() {
+
   return (
     <section className="page-8-container">
       <div className="upper-curved-div"></div>
+
       <div className="page-8-main-contnent">
         <h2>Why PillUp is needed in every Indian house</h2>
-        <IconEmojiWink style={{fontSize:"4rem"}}/>
-        <div>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+        <div className="anchor-tags-container">
+            <AnimateBox icon={<IconEmojiWink className="svg-animation-box" />} text="Automatically fill your next dose" />
+            <AnimateBox icon={<AccessibilityIcon className="svg-animation-box"/>} text="Helps elders become more independent" />
+            <AnimateBox icon={<AccessAlarmsIcon className="svg-animation-box" />}  text="Ensures medicines are taken on time" />
+            <AnimateBox icon={<AttachMoneyIcon className="svg-animation-box" />} text="Offers discounts on order and delivery" />
+            <AnimateBox icon={<AccessAlarmsIcon className="svg-animation-box" />}  text="Avoids over or under dosage of medicines" />
         </div>
+        <img src="https://pillup.com/assets/Benefits/bgElement.svg" height="130px" alt="" />
+        <img src="https://pillup.com/assets/Benefits/bgElement.svg" height="130px" alt="" />
         
       </div>
+
       <img
         src="https://pillup.com/assets/benefitElement2.svg"
         alt="section-8 design"
@@ -25,9 +33,43 @@ function PageEight() {
 }
 
 function AnimateBox(props){
+
+  const [isVisible, setvisible] = useState(true);
+
+  window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 5520 ){
+      setvisible(false);
+    }
+    if(window.innerWidth < 800){
+      if(window.scrollY < 500){
+        setvisible(false);
+      }
+    }
+  })
+
+  if(window.innerWidth < 576){
+    window.addEventListener("scroll", ()=>{
+      if(window.scrollY > 8420 ){
+        setvisible(false);
+      }else{
+        setvisible(true)
+      }
+      
+    })
+  }else{
+    window.addEventListener("scroll", ()=>{
+      if(window.scrollY > 5520 ){
+        setvisible(false);
+      }
+    })
+  }
+
     return(
         <a href="#">
-            
+          <div className={isVisible ? "section-8-animation" : "section-8-animation-visible"}>
+             <div>{props.icon}</div>
+             <h3>{props.text}</h3>
+          </div>         
         </a>
     )
 }

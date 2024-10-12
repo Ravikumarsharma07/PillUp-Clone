@@ -12,9 +12,6 @@ function PageSix() {
 
     function toShowPercent(){
         if(trigger){
-            console.log("yes")
-            console.log(trigger)
-
             let count = 0;
             const myInterval = setInterval(()=>{
               if(count < 80){
@@ -33,26 +30,33 @@ function PageSix() {
                 setPeoples(prev => prev+1);
             },50)
             setTimeout(() => {
-                // clearInterval(myInterval);
                 clearInterval(intervalForPouches);
                 clearInterval(intervalForProples);
             }, 900);
 
-        }else{
-            console.log("")
         }
     }
     useEffect(()=>{
         toShowPercent() 
     },[trigger])   
 
-    window.addEventListener("scroll", ()=>{
-        console.log(window.scrollY)
+
+
+    if(window.innerWidth < 576){
+      window.addEventListener("scroll", ()=>{
+        if(window.scrollY > 6700){
+            setClassForImg("show-image");
+            setTrigger(true);
+        }
+    })
+    }else{
+      window.addEventListener("scroll", ()=>{
         if(window.scrollY > 4500){
             setClassForImg("show-image");
             setTrigger(true);
         }
     })
+    }
 
   return (
     <section className="home-page-6">

@@ -1,4 +1,4 @@
-import "./../../homePage/homePage.css"
+import "./styles/homePage.css"
 
 function PageOne(){
     return (

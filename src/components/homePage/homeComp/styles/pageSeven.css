@@ -15,10 +15,41 @@
 .page-7-container div{
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .page-7-container div img{
     height: 180px;
     width: 200px;
     object-fit: contain;
+}
+
+
+@media (max-width:576px) {
+    .page-7-container{
+        height: max-content;
+        padding:50px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: #e5effb;
+    }
+    .page-7-container h2{
+        font-size: 2.4rem;
+        color: rgb(25, 25, 83);
+        font-weight: 600;
+    }
+    .page-7-container div{
+        margin: 30px 0px;
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .page-7-container div img{
+        height: 120px;
+        width: 180px;
+        object-fit: contain;
+    }    
 }

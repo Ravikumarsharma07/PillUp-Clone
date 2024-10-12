@@ -1,6 +1,5 @@
 header {
-  /* max-width: 1440px; */
-  width: 98vw;
+  width: 100%;
   height: 110px;
   display: flex;
   justify-content: space-evenly;
@@ -11,9 +10,15 @@ header {
   height: 75px;
   margin: 10px 0px 0px 10px;
 }
+.company-logo-box:active{
+  background-color: transparent;
+}
 .nav-links-container {
+  /* background-color: darkblue; */
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
   z-index: 5;
 }
 a.nav-links {
@@ -21,7 +26,7 @@ a.nav-links {
   color: black;
   font-size: 1.38rem;
   font-weight: 700;
-  margin: 0px 20px 10px 20px;
+  margin: 0px 15px 10px 13px;
 }
 a.nav-links:hover {
   opacity: 0.6;
@@ -68,11 +73,12 @@ a.nav-links:hover {
   header {
     /* max-width: 1440px; */
     width: 100%;
-    height: 110px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
   }
   .company-logo {
     height: 55px;
@@ -82,12 +88,13 @@ a.nav-links:hover {
     z-index: 7;
     height: 35px;
     align-self: center;
-    width: 39px;
+    width: 33px;
     border-radius: 4px;
     border: 1px solid black;
     margin: 0px 0px 0px 25px;
     display: block;
     background-color: transparent;
+    color: black;
   }
   .nav-links-container {
     height: 00px;
@@ -97,30 +104,28 @@ a.nav-links:hover {
     flex-direction: column;
     top: 100px;
     display: flex;
-    /* transition: all 400ms linear; */
   }
   .nav-links-container-active{
-      height: 300px;
+      height: 250px;
       display: flex;    
     overflow-y: hidden;     
     flex-direction: column;
       position: absolute;
       top: 100px;
-      background-color: rgb(255, 255, 255);
       width: 100%;
       padding: 20px;
       align-items: center;
       backdrop-filter: blur(10px) saturate(180%);
       -webkit-backdrop-filter: blur(10px) saturate(180%);
-      background-color: rgba(255, 255, 255, 0.863);
-      transition: all 400ms linear;
+      background-color: rgba(194, 231, 255, 1);
+      transition: all 200ms linear;
   }
   a.nav-links {
     text-decoration: none;
     color: black;
     font-size: 1.38rem;
     font-weight: 700;
-    margin: 10px 20px 10px 10px;
+    margin: 9px 20px 7px 20px;
   }
   a.nav-links:hover {
     opacity: 0.6;
@@ -133,7 +138,7 @@ a.nav-links:hover {
     margin: 0px 0px 10px 0px;
     transform: scale(0.7);
     position: relative;
-    left: -30px;
+    left: -33px;
   }
   .download-btns div {
     height: 49px;
@@ -155,6 +160,9 @@ a.nav-links:hover {
   .download-btns div a img {
     height: 30px;
     transition: all 150ms ease-out;
+  }
+  .download-btns a img{
+    height: 43px;
   }
   .download-btns div a img:hover,
   .download-btns a img:hover {

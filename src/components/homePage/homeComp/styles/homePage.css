@@ -1,0 +1,78 @@
+.section-one{
+    /* height: 600px; */
+    height: 87vh;
+    padding: 10px 45px 75px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section-one h2{
+    font-size: 4.7rem;
+    text-align: center;
+}
+.section-one p{
+    width: 510px;
+    text-align: center;
+    font-size: 2.3rem;
+    font-weight: 100;
+    margin: 30px 10px 0px 0px;
+}
+.section-one a{
+    height: 60px;
+    width: 200px;
+    margin: 50px 0px 0px 0px ;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    align-items: center;
+}
+
+
+@media (max-width:576px) {
+    .section-one{
+        height: max-content;
+        padding: 10px 20px 75px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .section-one h2{
+        font-size: 2rem;
+        text-align: center;
+        line-height: 3rem;
+        font-weight: 600;
+        padding: 10px 10px;
+    }
+    .section-one p{
+        width: 93%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 300;
+        margin: 30px 0px 0px 0px;
+    }
+    .section-one a{
+        height: 60px;
+        width: 200px;
+        margin: 30px 0px 0px 0px ;
+        background-color: transparent;
+        border-radius: 30px;
+        font-size: 1.3rem;
+        border: 1px solid black;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        align-items: center;
+    }    
+}
