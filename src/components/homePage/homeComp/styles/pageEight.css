@@ -132,11 +132,14 @@
         justify-content: center;
     }
     .page-8-main-contnent div a{
-        color: black;
+        color: rgb(0, 0, 0);
         text-decoration: none;    
         height: 190px;
         width: 100%;
         overflow: scroll!important;
+        background-color: transparent;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
     .page-8-main-contnent div a div h3{
         letter-spacing: 0.9px;
@@ -160,9 +163,9 @@
         background-color: white;
         filter: drop-shadow(2px 2px 8px rgb(170, 170, 170));
         border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
         z-index: 3;
         transition: all 500ms ease-out;
-        border-bottom-left-radius: 20px;
     }
     .section-8-animation-visible{
         height: 190px;
@@ -171,7 +174,7 @@
         flex-direction: column;
         justify-content: start;
         gap: 30px;
-        padding:30px 30px;   
+        padding:20px 30px;   
         background-color: rgb(255, 255, 255);
         filter: drop-shadow(2px 2px 8px rgb(170, 170, 170));
         border-bottom-right-radius: 20px;

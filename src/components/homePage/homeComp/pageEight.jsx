@@ -51,10 +51,7 @@ function AnimateBox(props){
     window.addEventListener("scroll", ()=>{
       if(window.scrollY > 8420 ){
         setvisible(false);
-      }else{
-        setvisible(true)
       }
-      
     })
   }else{
     window.addEventListener("scroll", ()=>{

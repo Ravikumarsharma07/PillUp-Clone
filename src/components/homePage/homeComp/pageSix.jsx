@@ -5,34 +5,44 @@ function PageSix() {
 
     const [classForImg, setClassForImg] = useState("");
     const [percent, setPercent] = useState(0);
-    const [pouches, setPouches] = useState(99997);
-    const [peoples, setPeoples] = useState(982);
+    const [pouches, setPouches] = useState(0);
+    const [peoples, setPeoples] = useState(0);
 
     const [trigger , setTrigger] = useState(false);
 
     function toShowPercent(){
         if(trigger){
-            let count = 0;
+            let count1 = 0;
             const myInterval = setInterval(()=>{
-              if(count < 80){
+              if(count1 < 80){
                 setPercent((prev) =>{return prev+1})
-                count++;
+                count1++;
               }else{
                 clearInterval(myInterval)
               }
             }, 10)
 
+            let count2 = 0 
             const intervalForPouches = setInterval(() => {
-                setPouches(prev => prev+1)                                
-            }, 300);
-
-            const intervalForProples = setInterval(()=>{
-                setPeoples(prev => prev+1);
-            },50)
-            setTimeout(() => {
+              if(count2 < 100000){
+                setPouches(prev => prev+500) 
+                count2 = count2 + 500                             
+              }else{
                 clearInterval(intervalForPouches);
+              }
+            }, 10);
+              
+            let count3 = 0;
+            const intervalForProples = setInterval(()=>{
+              if(count3 < 1000){
+                console.log(count3)
+                setPeoples(prev => prev+5);
+                count3 = count3 + 5
+              }else{
                 clearInterval(intervalForProples);
-            }, 900);
+              }
+                
+            },15)
 
         }
     }
