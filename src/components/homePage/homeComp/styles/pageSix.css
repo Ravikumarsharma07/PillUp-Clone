@@ -35,12 +35,10 @@
 }
 .home-page-6 div div img{
     height: 120px;
-    scale: 0.3;
-    opacity: 0;
+    scale: 0.1;
 }
 .show-image{
-    transition:all 600ms ease-in;
-    opacity: 1!important;
+    transition:all 1000ms ease-in;
     scale: 1!important;
 }
 
@@ -89,12 +87,10 @@
     }
     .home-page-6 div div img{
         height: 120px;
-        scale: 0.3;
-        opacity: 0;
+        scale: 0;
     }
     .show-image{
-        transition:all 500ms ease-out;
-        opacity: 1!important;
+        transition:all 1000ms ease-out;
         scale: 0.9!important;
     }  
 }

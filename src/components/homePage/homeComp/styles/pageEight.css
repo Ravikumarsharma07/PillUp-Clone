@@ -1,5 +1,5 @@
 .page-8-container{
-    height: 100vh;
+    height: max-content;
     position: relative;
     top: -30px;
 }
@@ -45,14 +45,14 @@
 }
 .page-8-main-contnent img:nth-child(3){
     position: absolute;
-    bottom: 0%;
+    bottom: 20%;
     left: 2%;
     z-index: 1;
     width: 200px;
 }
 .page-8-main-contnent img:nth-child(4){
     position: absolute;
-    bottom: 0%;
+    bottom: 20%;
     right: 2%;
     z-index: 1;
     width: 200px;

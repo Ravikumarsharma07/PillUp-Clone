@@ -7,6 +7,7 @@ import PageFive from "./homeComp/pageFive";
 import PageSix from "./homeComp/pageSix";
 import PageSeven from "./homeComp/pageSeven";
 import PageEight from "./homeComp/pageEight";
+import PageNine from "./homeComp/pageNine";
 
 
 function HomePage(){
@@ -22,6 +23,7 @@ function HomePage(){
         <PageSix />
         <PageSeven />
         <PageEight />
+        <PageNine />
         </>
     )
 }

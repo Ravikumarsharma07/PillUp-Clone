@@ -36,20 +36,9 @@ function AnimateBox(props){
 
   const [isVisible, setvisible] = useState(true);
 
-  window.addEventListener("scroll", ()=>{
-    if(window.scrollY > 5520 ){
-      setvisible(false);
-    }
-    if(window.innerWidth < 800){
-      if(window.scrollY < 500){
-        setvisible(false);
-      }
-    }
-  })
-
   if(window.innerWidth < 576){
     window.addEventListener("scroll", ()=>{
-      if(window.scrollY > 8420 ){
+      if(window.scrollY > 8570 ){
         setvisible(false);
       }
     })

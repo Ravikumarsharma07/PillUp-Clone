@@ -20,7 +20,7 @@ function PageSix() {
               }else{
                 clearInterval(myInterval)
               }
-            }, 10)
+            }, 30)
 
             let count2 = 0 
             const intervalForPouches = setInterval(() => {
@@ -35,7 +35,6 @@ function PageSix() {
             let count3 = 0;
             const intervalForProples = setInterval(()=>{
               if(count3 < 1000){
-                console.log(count3)
                 setPeoples(prev => prev+5);
                 count3 = count3 + 5
               }else{
