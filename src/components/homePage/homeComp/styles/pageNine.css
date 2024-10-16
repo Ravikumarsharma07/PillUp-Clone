@@ -64,7 +64,7 @@
     .page-9-container iframe{
         z-index: 1!important;
         height: 40vh;
-        width: 85%;
+        width: 90%!important;
         border-radius: 20px;
         filter: drop-shadow(3px 3px 15px rgb(83, 83, 83));
     }
@@ -98,7 +98,7 @@
     }    
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width:580px) {
     .page-9-container{
         padding: 20px 0px;
         height: max-content;
