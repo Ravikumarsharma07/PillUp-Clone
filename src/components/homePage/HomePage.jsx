@@ -15,7 +15,7 @@ function HomePage(){
     
     return(
         <>
-        {/* <PageOne />
+        <PageOne />
         <Chatbtn />
         <PageTwo />
         <PageThree />  
@@ -24,9 +24,7 @@ function HomePage(){
         <PageSix />
         <PageSeven />
         <PageEight />
-        <PageNine /> */}
-
-        <PageTen />
+        <PageNine />
         </>
     )
 }
