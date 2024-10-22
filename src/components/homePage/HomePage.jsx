@@ -8,13 +8,14 @@ import PageSix from "./homeComp/pageSix";
 import PageSeven from "./homeComp/pageSeven";
 import PageEight from "./homeComp/pageEight";
 import PageNine from "./homeComp/pageNine";
+import PageTen from "./homeComp/PageTen";
 
 
 function HomePage(){
     
     return(
         <>
-        <PageOne />
+        {/* <PageOne />
         <Chatbtn />
         <PageTwo />
         <PageThree />  
@@ -23,7 +24,9 @@ function HomePage(){
         <PageSix />
         <PageSeven />
         <PageEight />
-        <PageNine />
+        <PageNine /> */}
+
+        <PageTen />
         </>
     )
 }
