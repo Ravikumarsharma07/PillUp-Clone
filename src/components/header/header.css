@@ -82,7 +82,7 @@ a.nav-links:hover {
   }
   .company-logo {
     height: 55px;
-    margin: 10px 0px 0px 10px;
+    margin: 10px 20px 0px 10px;
   }
   .navbar-toggle-btn{
     z-index: 7;
@@ -106,7 +106,7 @@ a.nav-links:hover {
     display: flex;
   }
   .nav-links-container-active{
-      height: 250px;
+      height: 290px;
       display: flex;    
     overflow-y: hidden;     
     flex-direction: column;
@@ -135,10 +135,11 @@ a.nav-links:hover {
     width: max-content;
     display: flex;
     justify-content: space-between;
-    margin: 0px 0px 10px 0px;
+    margin: 0px -40px 10px 0px;
     transform: scale(0.7);
     position: relative;
     left: -33px;
+
   }
   .download-btns div {
     height: 49px;
@@ -147,12 +148,17 @@ a.nav-links:hover {
     border-radius: 30px;
     display: flex;
     margin: 0px 20px 0px 10px;
+    /* background-color: gainsboro; */
   }
   .download-btns div a {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 89px;
+    /* background-color: chartreuse; */
+  }
+  .call-icon{
+    width: 40px!important;
   }
   .download-btns div a.android-logo {
     border-right: 2px solid black;

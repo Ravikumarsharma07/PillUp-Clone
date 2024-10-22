@@ -34,7 +34,7 @@ function Header(){
                         <img src='https://pillup.com/assets/ios.svg' alt='ios-logo'/>
                     </a>
                 </div>
-                <a href='tel:+918920878094'>
+                <a href='tel:+918920878094' className='call-icon'>
                     <img src='https://pillup.com/assets/callIcon.svg' alt='call icon'/>
                 </a>
             <button className='navbar-toggle-btn' onClick={()=>{clickEvent()}} ><MenuIcon /></button>

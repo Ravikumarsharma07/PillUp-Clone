@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 function PageNine() {
@@ -58,12 +57,12 @@ function PageNine() {
   }
 
   return (
-    <section className=" overflow-hidden p-5 flex  flex-col gap-6 sm:gap-10 items-center">
+    <section className=" overflow-hidden p-0 flex  flex-col gap-6 sm:gap-10 items-center">
       <h2 className="text-3xl sm:text-4xl text-center font-semibold">
         People are loving PillUp
       </h2>
       <iframe
-        className="h-[300px] sm:h-[360px] md:h-[450px] lg:h-[550px] xl:h-[650px] w-5/6 max-w-[940px] rounded-xl shadow-2xl"
+        className="h-[250px] sm:h-[360px] md:h-[450px] lg:h-[550px] xl:h-[650px] w-5/6 max-w-[940px] rounded-xl shadow-2xl"
         key={videoToShow.id}
         src={videoToShow.video}
         title="YouTube video player"
@@ -74,7 +73,7 @@ function PageNine() {
       ></iframe>
 
       <div
-        className="grid  sm:grid-cols-3 gap-10 w-5/6 max-w-[940px]"
+        className="grid  sm:grid-cols-3 gap-3 sm:gap-10 w-5/6 max-w-[940px]"
         key={videoToShow}
       >
         <div
@@ -96,9 +95,17 @@ function PageNine() {
           </div>
         </div>
 
-          
-          <div id="second" onClick={secondHandler} key={customer2.id} className="max-sm:flex max-sm:gap-2" >
-          <img src={customer2.image} alt="customer" className="rounded-xl max-sm:w-32"/>
+        <div
+          id="second"
+          onClick={secondHandler}
+          key={customer2.id}
+          className="max-sm:flex max-sm:gap-2"
+        >
+          <img
+            src={customer2.image}
+            alt="customer"
+            className="rounded-xl max-sm:w-32"
+          />
           <div>
             <h3 className="font-bold">
               PillUp Customer Story | {customer2.name}
@@ -107,8 +114,17 @@ function PageNine() {
           </div>
         </div>
 
-        <div id="third" onClick={thirdHandler} key={customer3.id} className="max-sm:flex max-sm:gap-2">
-          <img src={customer3.image} alt="customer" className="rounded-xl max-sm:w-32"/>
+        <div
+          id="third"
+          onClick={thirdHandler}
+          key={customer3.id}
+          className="max-sm:flex max-sm:gap-2"
+        >
+          <img
+            src={customer3.image}
+            alt="customer"
+            className="rounded-xl max-sm:w-32"
+          />
           <div>
             <h3 className="font-bold">
               PillUp Customer Story | {customer3.name}
