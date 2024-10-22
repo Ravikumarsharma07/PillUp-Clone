@@ -25,6 +25,7 @@ function HomePage(){
         <PageSeven />
         <PageEight />
         <PageNine />
+
         </>
     )
 }

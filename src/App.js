@@ -7,7 +7,7 @@ import Header from './components/header/header';
 function App() {
   return (
       <>
-      {/* <Router>
+      <Router>
         <Header />
 
 
@@ -16,12 +16,9 @@ function App() {
                 <Route path='/' element={<HomePage />} />
             </Routes>
 
-      </Router>  */}
-      <HomePage />
+      </Router> 
 
 
-
-      
 
       </>
   );
