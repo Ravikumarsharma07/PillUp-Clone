@@ -51,7 +51,7 @@ function AnimateBox(props){
   }
 
     return(
-        <a href="#">
+        <a href="/">
           <div className={isVisible ? "section-8-animation" : "section-8-animation-visible"}>
              <div>{props.icon}</div>
              <h3>{props.text}</h3>

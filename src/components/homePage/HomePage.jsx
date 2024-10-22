@@ -8,7 +8,7 @@ import PageSix from "./homeComp/pageSix";
 import PageSeven from "./homeComp/pageSeven";
 import PageEight from "./homeComp/pageEight";
 import PageNine from "./homeComp/pageNine";
-import PageTen from "./homeComp/PageTen";
+
 
 
 function HomePage(){

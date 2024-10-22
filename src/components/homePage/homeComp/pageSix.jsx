@@ -45,7 +45,9 @@ function PageSix() {
 
         }
     }
+    
     useEffect(()=>{
+
         toShowPercent() 
     },[trigger])   
 
