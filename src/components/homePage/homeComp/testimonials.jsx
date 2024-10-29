@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-function PageNine() {
+
+const Testimonials = () => {
+
   const [videoToShow, setVideoToShow] = useState({
     id: 0,
     name: "Dr. Aruna Broota",
@@ -33,36 +35,24 @@ function PageNine() {
     video: "https://www.youtube.com/embed/z8i4ayMzXIg?si=rGSdH7RqXksaPKDx",
   });
 
-  function firstHandler() {
-    const currentVideo = videoToShow;
-    const customer = customer1;
-    setVideoToShow(customer);
-    setCustomer1(currentVideo);
-    console.log(customer);
+
+
+  const handleClick = (customer, setCustomer) =>{
+    let customerData = customer;
+    setCustomer(videoToShow);
+    setVideoToShow(customerData);
   }
 
-  function secondHandler() {
-    const currentVideo = videoToShow;
-    const customer = customer2;
-    setVideoToShow(customer);
-    setCustomer2(currentVideo);
-    console.log(customer);
-  }
 
-  function thirdHandler() {
-    const currentVideo = videoToShow;
-    const customer = customer3;
-    setVideoToShow(customer);
-    setCustomer3(currentVideo);
-  }
+
 
   return (
-    <section className=" overflow-hidden p-0 flex  flex-col gap-6 sm:gap-10 items-center">
+    <section className=" overflow-hidden py-10 flex  flex-col gap-6 sm:gap-10 items-center">
       <h2 className="text-3xl sm:text-4xl text-center font-semibold">
         People are loving PillUp
       </h2>
       <iframe
-        className="h-[250px] sm:h-[360px] md:h-[450px] lg:h-[550px] xl:h-[650px] w-5/6 max-w-[940px] rounded-xl shadow-2xl"
+        className="h-[250px] sm:h-[360px] md:h-[450px] lg:h-[550px] xl:h-[540px] w-5/6 max-w-[840px] rounded-xl shadow-2xl"
         key={videoToShow.id}
         src={videoToShow.video}
         title="YouTube video player"
@@ -73,12 +63,12 @@ function PageNine() {
       ></iframe>
 
       <div
-        className="grid  sm:grid-cols-3 gap-3 sm:gap-10 w-5/6 max-w-[940px]"
+        className="grid  sm:grid-cols-3 gap-3 sm:gap-10 w-5/6 max-w-[840px]"
         key={videoToShow}
       >
         <div
           id="first"
-          onClick={firstHandler}
+          onClick={() => handleClick(customer1, setCustomer1)}
           key={customer1.id}
           className="max-sm:flex max-sm:gap-2"
         >
@@ -97,7 +87,7 @@ function PageNine() {
 
         <div
           id="second"
-          onClick={secondHandler}
+          onClick={() => handleClick(customer2, setCustomer2)}
           key={customer2.id}
           className="max-sm:flex max-sm:gap-2"
         >
@@ -107,7 +97,7 @@ function PageNine() {
             className="rounded-xl max-sm:w-32"
           />
           <div>
-            <h3 className="font-bold">
+            <h3 className="font-bold ">
               PillUp Customer Story | {customer2.name}
             </h3>
             <p className="opacity-90">{customer2.nameAndAge}</p>
@@ -116,7 +106,7 @@ function PageNine() {
 
         <div
           id="third"
-          onClick={thirdHandler}
+          onClick={() => handleClick(customer3, setCustomer3)}
           key={customer3.id}
           className="max-sm:flex max-sm:gap-2"
         >
@@ -137,4 +127,6 @@ function PageNine() {
   );
 }
 
-export default PageNine;
+
+
+export default Testimonials;

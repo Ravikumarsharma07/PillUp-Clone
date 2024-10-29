@@ -37,6 +37,7 @@
     text-decoration: none;    
     height: 210px;
     width: 380px;
+    background-color: transparent;
 }
 .page-8-main-contnent div a div h3{
     letter-spacing: 1px;

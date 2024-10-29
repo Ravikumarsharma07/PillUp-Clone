@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./styles/pageSix.css"
 
-function PageSix() {
+function Achievements() {
 
     const [classForImg, setClassForImg] = useState("");
     const [percent, setPercent] = useState(0);
@@ -101,4 +101,4 @@ function PageSix() {
   );
 }
 
-export default PageSix;
+export default Achievements;

@@ -1,7 +1,7 @@
 // #e5effb background color for section
 import "./styles/pageSeven.css"
 
-function PageSeven() {
+function OurPartners() {
   return (
     <section className="page-7-container">
       <h2>Our Partners</h2>
@@ -15,4 +15,4 @@ function PageSeven() {
   );
 }
 
-export default PageSeven;
+export default OurPartners;

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import "./styles/pageTwo.css"
 
-function PageTwo(){
+function PlansPage(){
 
     const [imageId, setId] = useState("");
 
@@ -40,4 +40,4 @@ function PageTwo(){
 }
 
 
-export default PageTwo
+export default PlansPage

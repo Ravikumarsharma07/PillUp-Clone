@@ -1,10 +1,10 @@
 import "./styles/pageFour.css";
 
-function PageFour() {
+const  ContactPage = () => {
   return(
     <>
-  {window.innerWidth > 576 ? <ForBigScreen /> : <ForMobile />}
-  </>
+      {window.innerWidth > 576 ? <ForBigScreen /> : <ForMobile />}
+    </>
   )
 }
 
@@ -37,4 +37,4 @@ return (
   </section>
 );
 }
-export default PageFour;
+export default ContactPage;

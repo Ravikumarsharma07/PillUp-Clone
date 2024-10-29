@@ -24,6 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy":"https://pillup-clone-backend-wdo6.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",

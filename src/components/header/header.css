@@ -22,11 +22,12 @@ header {
   z-index: 5;
 }
 a.nav-links {
+  height: 50px;
   text-decoration: none;
   color: black;
   font-size: 1.38rem;
   font-weight: 700;
-  margin: 0px 15px 10px 13px;
+  margin: 0px 25px 0px 25px;
 }
 a.nav-links:hover {
   opacity: 0.6;
@@ -131,7 +132,7 @@ a.nav-links:hover {
     opacity: 0.6;
   }
   .download-btns {
-    height: 45px;
+    height: 45px; 
     width: max-content;
     display: flex;
     justify-content: space-between;

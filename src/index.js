@@ -1,13 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Layout from "./Layout"
+import { createBrowserRouter, Route, RouterProvider, createRoutesFromElements  } from 'react-router-dom';
+import BlogPage from './components/blogPage/blogPage';
+import HomePage from './components/homePage/HomePage';
+import WhyUs from './components/whyUs/WhyUs';
+import HowItWorks from './components/howItWorks/HowItWorks';
+import BrandStory from './components/brandStory/BrandStory';
+import ReadBlogUI from './components/blogPage/components/smallComponents/ReadBlogUI';
+
+
+
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+      <Route path="/" element={<Layout />} >
+        <Route path='' element={<HomePage />} />
+        <Route path='WhyUs' element={<WhyUs />} />
+        <Route path='HowItWorks' element={<HowItWorks />} />
+        <Route path='Blogs/' element={<BlogPage />} />
+        <Route path='Blogs/:blogID' element={<ReadBlogUI />}></Route> 
+        
+        <Route path='BrandStory' element={<BrandStory />} />
+        <Route path='*' element={<p className='text-center my-10 text-6xl font-bold'>404 page not found</p>} />
+      </Route>
+  )
+)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 

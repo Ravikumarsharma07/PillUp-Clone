@@ -1,14 +1,13 @@
-
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import "./header.css"
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
 
 function Header(){
-    const [isToggleBtn , setIsToggleBtn] = useState(false);
+    const [toggleBtn , setToggleBtn] = useState(false);
 
     function clickEvent(){
-        setIsToggleBtn(!isToggleBtn);
+        setToggleBtn(!toggleBtn);
     }
 
 
@@ -16,13 +15,13 @@ function Header(){
         <>
         <header>
             
-            <Link className='company-logo-box' onClick={()=>{setIsToggleBtn(false)}} to="/" ><img className="company-logo" src="https://pillup.com/assets/logo.svg" alt="company logo" /> </Link>
-            <div className={!isToggleBtn?"nav-links-container":"nav-links-container-active"} >
-            <Link onClick={()=>{setIsToggleBtn(false)}} className="nav-links"  to="/WhyUs">Why Us</Link>
-            <Link onClick={()=>{setIsToggleBtn(false)}} className="nav-links" to="/HowItWorks">How It Works</Link>
-            <Link onClick={()=>{setIsToggleBtn(false)}} className="nav-links" to="/Blogs">Blogs</Link>
-            <Link onClick={()=>{setIsToggleBtn(false)}} className="nav-links" to="/BrandStory">Brand Story</Link>
-            <Link onClick={()=>{setIsToggleBtn(false)}} className="nav-links" to="AboutUs">About Us</Link>
+            <NavLink className='company-logo-box' onClick={()=>{setToggleBtn(false)}} to="/" ><img className="company-logo" src="https://pillup.com/assets/logo.svg" alt="company logo" /> </NavLink>
+            <div className={!toggleBtn?"nav-links-container":"nav-links-container-active"} >
+            <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`}  to="/WhyUs">Why Us</NavLink>
+            <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`} to="/HowItWorks">How It Works</NavLink>
+            <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`} to="/Blogs">Blogs</NavLink>
+            <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`} to="/BrandStory">Brand Story</NavLink>
+            <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`} to="AboutUs">About Us</NavLink>
             </div>
 
             <div className="download-btns">

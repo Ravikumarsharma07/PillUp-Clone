@@ -1,6 +1,6 @@
 import "./styles/homePage.css"
 
-function PageOne(){
+function HeroSection(){
     return (
         <section className="home-page section-one">
             <h2>We organize, pack and deliver your medicines. Simple!</h2>
@@ -9,4 +9,4 @@ function PageOne(){
         </section>
     )
 }
-export default PageOne;
+export default HeroSection;

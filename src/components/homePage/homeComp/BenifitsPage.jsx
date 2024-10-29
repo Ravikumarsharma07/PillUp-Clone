@@ -4,7 +4,7 @@ import AccessibilityIcon from '@mui/icons-material/Accessibility';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
 import AccessAlarmsIcon from '@mui/icons-material/AccessAlarms';
 
-function PageEight() {
+function BenefitsPage() {
 
   return (
     <section className="page-8-container">
@@ -38,7 +38,7 @@ function AnimateBox(props){
 
   if(window.innerWidth < 576){
     window.addEventListener("scroll", ()=>{
-      if(window.scrollY > 8570 ){
+      if(window.scrollY > 8900 ){
         setvisible(false);
       }
     })
@@ -60,7 +60,7 @@ function AnimateBox(props){
     )
 }
 
-export default PageEight;
+export default BenefitsPage;
 
 
 function IconEmojiWink(props) {

@@ -4,7 +4,7 @@ import "./styles/pageThree.css";
 import EastIcon from "@mui/icons-material/East";
 
 
-function PageThree() { 
+const SlidesHowItWorks = () => { 
 
   const [width , setWidth] = useState(window.innerWidth);
 
@@ -17,18 +17,23 @@ function PageThree() {
     }    
   },[width]);
 
+
   return (  
     <>
-    {width < 576 ? <MainContentForMobile /> : <MainContentForBigScreen />}  
+
+      {width < 576 ? <MainContentForSmallScreen /> : <MainContentForBigScreen />}  
+    
     </>    
   );
 }
 
 
-function MainContentForBigScreen(){
+
+
+const MainContentForBigScreen = () => {
   const divContainer = useRef();
-const { scrollYProgress } = useScroll({ target: divContainer });
-const x = useTransform(scrollYProgress, [0, 0.9], ["33.3%", "-33.3%"]);
+  const { scrollYProgress } = useScroll({ target: divContainer });
+  const x = useTransform(scrollYProgress, [0, 0.9], ["33.3%", "-33.3%"]);
 
   return (
     <section className="box-container" ref={divContainer}>
@@ -113,7 +118,10 @@ const x = useTransform(scrollYProgress, [0, 0.9], ["33.3%", "-33.3%"]);
   )
 }
 
-function MainContentForMobile(){
+
+
+
+const MainContentForSmallScreen = () => {
   return (
     <div className="section-3-container-mobile-version">
     <section className="slide-1">
@@ -191,4 +199,5 @@ function MainContentForMobile(){
   )
 }
 
-export default PageThree;
+
+export default SlidesHowItWorks;

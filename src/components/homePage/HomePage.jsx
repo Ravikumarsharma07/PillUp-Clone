@@ -1,31 +1,33 @@
-import PageOne from "./homeComp/pageOne";
+import HeroSection from "./homeComp/heroSection";
 import Chatbtn from "./homeComp/smallComponents/chatbtn";
-import PageTwo from "./homeComp/pageTwo";
-import PageThree from "./homeComp/pageThree";
-import PageFour from "./homeComp/pageFour";
-import PageFive from "./homeComp/pageFive";
-import PageSix from "./homeComp/pageSix";
-import PageSeven from "./homeComp/pageSeven";
-import PageEight from "./homeComp/pageEight";
-import PageNine from "./homeComp/pageNine";
+import SlidesHowItWorks from "./homeComp/slidesHowItWorks";
+import ContactPage from "./homeComp/contactPage";
+import Slides2_howItWorks from "./homeComp/Slides_2";
+import HomeBlogPage from "./homeComp/homeBlogPage";
+import PlansPage from "./homeComp/PlansPage";
+import Achievements from "./homeComp/Achievements";
+import OurPartners from "./homeComp/OurPartners";
+import BenefitsPage from "./homeComp/BenifitsPage";
+import Testimonials from "./homeComp/testimonials";
 
 
 
-function HomePage(){
+
+const  HomePage = () => {
     
     return(
         <>
-        <PageOne />
+        <HeroSection />
         <Chatbtn />
-        <PageTwo />
-        <PageThree />  
-        <PageFour />
-        <PageFive />
-        <PageSix />
-        <PageSeven />
-        <PageEight />
-        <PageNine />
-
+        <PlansPage />
+        <SlidesHowItWorks />  
+        <ContactPage />
+        <Slides2_howItWorks />
+        <Achievements />
+        <OurPartners />
+        <BenefitsPage />
+        <Testimonials /> 
+        <HomeBlogPage />
         </>
     )
 }

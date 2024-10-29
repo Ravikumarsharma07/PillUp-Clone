@@ -2,10 +2,10 @@ import {  useRef } from "react";
 import Slide from "./smallComponents/homeSlide.jsx";
 import { useScroll, useTransform, motion } from "framer-motion";
 
-function PageFive() {
+function Slides2_howItWorks() {
   return(
     <>
-    {window.innerWidth < 576 ? <ForMobile />: <ForBigScreen />}
+      {window.innerWidth < 576 ? <ForMobile />: <ForBigScreen />}
     </>
   )
 
@@ -68,6 +68,8 @@ function ForBigScreen(){
   );
 }
 
+
+
 function ForMobile(){
   return (
     <div className="page-5-container-div">
@@ -116,4 +118,4 @@ function ForMobile(){
   );
 }
 
-export default PageFive;
+export default Slides2_howItWorks;
