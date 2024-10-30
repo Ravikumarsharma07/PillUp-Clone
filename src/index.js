@@ -9,7 +9,7 @@ import HomePage from './components/homePage/HomePage';
 import WhyUs from './components/whyUs/WhyUs';
 import HowItWorks from './components/howItWorks/HowItWorks';
 import BrandStory from './components/brandStory/BrandStory';
-import ReadBlogUI from './components/blogPage/components/smallComponents/ReadBlogUI';
+import ReadBlog from './components/blogPage/components/smallComponents/ReadBlog';
 
 
 
@@ -22,7 +22,7 @@ const router = createBrowserRouter(
         <Route path='WhyUs' element={<WhyUs />} />
         <Route path='HowItWorks' element={<HowItWorks />} />
         <Route path='Blogs/' element={<BlogPage />} />
-        <Route path='Blogs/:blogID' element={<ReadBlogUI />}></Route> 
+        <Route path='Blogs/:blogID' element={<ReadBlog />}></Route> 
         
         <Route path='BrandStory' element={<BrandStory />} />
         <Route path='*' element={<p className='text-center my-10 text-6xl font-bold'>404 page not found</p>} />

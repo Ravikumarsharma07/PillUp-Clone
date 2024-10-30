@@ -1,8 +1,11 @@
 
-import { blogsData } from "../../../Layout";
+import { useContext } from "react";
+import BlogContext from "../../../context/blogContext";
 import BlogPageCard from "./smallComponents/BlogPageCard";
 
 const BlogContainer = () => {
+
+  const {blogs} = useContext(BlogContext)
   
   return (
     <section className="h-screen z-10 px-4 sm:px-16">
@@ -12,7 +15,7 @@ const BlogContainer = () => {
 
       <div className="grid lg:grid-cols-2 gap-12 max-sm:gap-10">
       
-      {blogsData.map((blog) => {
+      {blogs.map((blog) => {
                     const label = blog.label;
                     const textContent = blog.post_body;
                     const blogURL = `/Blogs/${blog.label}`

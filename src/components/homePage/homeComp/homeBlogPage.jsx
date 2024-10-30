@@ -1,25 +1,13 @@
-import { useEffect, useState } from "react";
+
+import { useContext } from "react";
 import BlogCard from "./smallComponents/blogCard";
 import { Link } from "react-router-dom";
+import BlogContext from "../../../context/blogContext";
 
 
 const HomeBlogPage = () => {
-    const [blogs, setBlogs] = useState([])
 
-    useEffect( () =>{
-        const fetchBlogs = async () => {
-            try {
-                const result = await fetch("https://pillup-clone-backend-wdo6.onrender.com/api/blogs");
-                const data = await result.json();
-                if(data){
-                    setBlogs(data.objects);
-                }
-            } catch (error) {
-                console.log(error);
-            }                      
-        }
-        fetchBlogs()
-    },[])
+    const {blogs} = useContext(BlogContext)
   
 
     return (
