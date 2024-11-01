@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+.custom-transition{
+  @apply transition-all duration-500 ease-linear relative
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

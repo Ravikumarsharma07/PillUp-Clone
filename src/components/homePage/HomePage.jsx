@@ -9,6 +9,7 @@ import Achievements from "./homeComp/Achievements";
 import OurPartners from "./homeComp/OurPartners";
 import BenefitsPage from "./homeComp/BenifitsPage";
 import Testimonials from "./homeComp/testimonials";
+import JoinToday from "./homeComp/JoinToday";
 
 
 
@@ -28,6 +29,7 @@ const  HomePage = () => {
         <BenefitsPage />
         <Testimonials /> 
         <HomeBlogPage />
+        <JoinToday />
         </>
     )
 }

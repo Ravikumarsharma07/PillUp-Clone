@@ -148,9 +148,10 @@
     box-shadow: 1px 1px 5px black;
 }
 .whatsapp-btn-closed{
-    height: 48px;
+    height: 45px;
     transition: all 100ms ease-out;
-    width: 48px!important;
+    width: 45px!important;
+    padding: 0px!important;
     /* scale: 1.2; */
 }
 .chat-container button img{
