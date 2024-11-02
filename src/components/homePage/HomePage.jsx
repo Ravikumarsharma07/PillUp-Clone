@@ -1,5 +1,4 @@
 import HeroSection from "./homeComp/heroSection";
-import Chatbtn from "./homeComp/smallComponents/chatbtn";
 import SlidesHowItWorks from "./homeComp/slidesHowItWorks";
 import ContactPage from "./homeComp/contactPage";
 import Slides2_howItWorks from "./homeComp/Slides_2";
@@ -19,7 +18,6 @@ const  HomePage = () => {
     return(
         <>
         <HeroSection />
-        <Chatbtn />
         <PlansPage />
         <SlidesHowItWorks />  
         <ContactPage />

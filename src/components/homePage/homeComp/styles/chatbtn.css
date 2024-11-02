@@ -141,7 +141,7 @@
     top: 580px;
     right: 55px;
     transition: all 100ms ease-out;
-    z-index: 20!important;
+    z-index: 90!important;
     font-size: 16px;
 }
 .chat-container button#whatapp-logo:hover{
@@ -152,6 +152,7 @@
     transition: all 100ms ease-out;
     width: 45px!important;
     padding: 0px!important;
+
     /* scale: 1.2; */
 }
 .chat-container button img{
@@ -305,7 +306,7 @@
         top: 80%!important;
         right: 3%;
         transition: all 100ms ease-out;
-        z-index: 20!important;
+        z-index: 990!important;
         font-size: 16px;
         scale: 0.9;
     }
