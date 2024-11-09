@@ -24,7 +24,7 @@ const WhyUSBenifits = () =>{
     return (
         <section className="bg-[#fff3e4] flex flex-1 py-16 px-8 max-sm:px-6 justify-center gap-8 flex-wrap ">
             {cardDetaills.map((card) => {
-                return <WhyUsCard imgURL={card.image} heading={card.heading} description={card.description}/>
+                return <WhyUsCard key={card.heading} imgURL={card.image} heading={card.heading} description={card.description}/>
             })}            
         </section>
     )
