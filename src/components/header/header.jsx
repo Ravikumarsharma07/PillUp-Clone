@@ -21,7 +21,7 @@ function Header(){
             <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`} to="/HowItWorks">How It Works</NavLink>
             <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`} to="/Blogs">Blogs</NavLink>
             <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`} to="/BrandStory">Brand Story</NavLink>
-            <NavLink onClick={()=>{setToggleBtn(false)}} className={({isActive}) => `nav-links ${isActive ? "opacity-80 border-b-[3px] border-black" : ""}`} to="AboutUs">About Us</NavLink>
+            <a href='https://www.tatvacare.in/about/' className='nav-links' rel="noreferrer" >About Us</a>
             </div>
 
             <div className="download-btns">
@@ -29,7 +29,7 @@ function Header(){
                     <a className='android-logo' href="https://play.google.com/store/apps/details?id=com.pillup" target='_blank' rel="noopener noreferrer">
                         <img src='https://pillup.com/assets/android.svg' alt='android-logo'/>
                     </a>
-                    <a href="https://apps.apple.com/app/id6447748859" target='_blank'>
+                    <a href="https://apps.apple.com/app/id6447748859" rel="noreferrer" target='_blank'>
                         <img src='https://pillup.com/assets/ios.svg' alt='ios-logo'/>
                     </a>
                 </div>
