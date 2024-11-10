@@ -6,7 +6,7 @@ import OurMissionBS from "./components/OurMissionBS";
 import OurVisionBS from "./components/OurVisionBS";
 import WhoWeAreBS from "./components/WhoWeAreBS";
 import WhyWeDoItBS from "./components/WhyWeDoItBS";
-import OurTeamBS from "./OurTeamBS";
+import OurTeamBS from "./components/OurTeamBS";
 
 
 const BrandStory = () => {

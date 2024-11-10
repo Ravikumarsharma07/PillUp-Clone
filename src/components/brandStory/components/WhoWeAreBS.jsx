@@ -12,7 +12,7 @@ const WhoWeAreBS = () => {
           <p className="text-end font-serif text-[24px] lg:text-[30px] md:text-[27px] italic p-3">‘Hey, it’s time to take your medicine’</p>
         </div>
         <img
-          className="w-[360px] max-sm:h-[330px] sm:w-[300px] max-h-[50%] object-cover"
+          className="w-[80%] max-w-[360px] max-sm:h-[330px] sm:w-[300px] max-h-[50%] object-cover"
           src="https://pillup.com/assets/BrandStory/whoWeAre.jpg"
           alt="flower"
         />

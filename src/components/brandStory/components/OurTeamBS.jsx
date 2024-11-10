@@ -3,7 +3,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const OurTeamBS = () => {
     return (
-        <section className="p-20">
+        <section className="py-16 sm:p-20">
             <h2 className="text-center font-semibold text-3xl ">OUR TEAM</h2>
             <div className="mt-16 flex flex-wrap justify-center gap-10">
                 <OurTeamCard name="Akanksha S" imgURL="https://pillup.com/assets/BrandStory/Akanksha.jpeg" linkedIn="https://www.linkedin.com/in/akanksha1511/" role="Co-founder" />
@@ -16,7 +16,7 @@ const OurTeamBS = () => {
 
 const OurTeamCard = ({name, imgURL, linkedIn, role}) => {
     return (
-        <div className="h-[440px] w-[320px] border-[2px] border-[#ededed]">
+        <div className="h-max max-sm:pb-4 max-h-[540px] w-[300px] sm:w-[320px] border-[2px] border-[#ededed]">
             <img className="w-full" src={imgURL} alt={"team member" + name} />
             <div className="px-4 pt-2">
             <p className="text-xl font-semibold">{name}</p>
