@@ -8,7 +8,7 @@ const BlogContainer = () => {
   const {blogs} = useContext(BlogContext)
   
   return (
-    <section className="h-screen z-10 px-4 sm:px-16">
+    <section className="min-h-screen h-max z-10 px-4 sm:px-16">
       <div className="h-20 text-4xl font-semibold text-orange-500 font-serif tracking-widest flex items-center justify-center bg-white z-50 relative top-[-50px] rounded-xl shadow-xl">
         <h3>LATEST BLOGS</h3>
       </div>
