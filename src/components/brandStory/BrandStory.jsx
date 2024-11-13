@@ -7,9 +7,14 @@ import OurVisionBS from "./components/OurVisionBS";
 import WhoWeAreBS from "./components/WhoWeAreBS";
 import WhyWeDoItBS from "./components/WhyWeDoItBS";
 import OurTeamBS from "./components/OurTeamBS";
+import { useEffect } from "react";
 
 
 const BrandStory = () => {
+    useEffect(()=>{
+        window.scrollTo({top:0 , behavior:"instant"})
+    },[])
+
     return (
         <>
         <BrandStoryHero />

@@ -5,9 +5,14 @@ import WhyUs_AboutPillUp from "./components/WhyUs_AboutPillUp";
 import WhyUs_WithPillUp from "./components/WhyUs_WithPillUp";
 import WhyUSBenifits from "./components/WhyUsBenifits";
 import WhyUsHero from "./components/WhyUsHero";
+import { useEffect } from "react";
 
 
 const WhyUs = () => {
+    useEffect(()=>{
+        window.scrollTo({top:0 , behavior:"instant"})
+    },[])
+
     return (
         <>
         <WhyUsHero />

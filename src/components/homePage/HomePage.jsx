@@ -10,10 +10,15 @@ import BenefitsPage from "./homeComp/BenifitsPage";
 import Testimonials from "./homeComp/testimonials";
 import JoinToday from "./homeComp/JoinToday";
 
+import { useEffect } from "react";
 
 
 
 const  HomePage = () => {
+
+    useEffect(()=>{
+        window.scrollTo({top:0 , behavior:"instant"})
+    },[])
     
     return(
         <>
