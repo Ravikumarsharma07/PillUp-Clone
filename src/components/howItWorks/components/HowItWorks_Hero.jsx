@@ -16,7 +16,7 @@ const HowItWorks_Hero = () => {
   }
 
   return (
-    <section className="max-sm:h-[70vh] h-[90vh] bg-[#799c9c] flex gap-16 justify-center items-center flex-col">
+    <section className="max-sm:h-[70vh] h-[90vh] bg-gradient-to-r from-violet-500 to-blue-300 flex gap-16 justify-center items-center flex-col">
       <div>
         <HeadingHIW text="PULL - PEEL - POP" />
         <HeadingHIW text="Make Life Easy Today" />

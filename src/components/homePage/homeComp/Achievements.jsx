@@ -53,7 +53,7 @@ function Achievements() {
 
 
 
-    if(window.innerWidth < 576){
+    if(window.innerWidth < 776){
       window.addEventListener("scroll", ()=>{
         if(window.scrollY > 6700){
             setClassForImg("show-image");
@@ -62,7 +62,7 @@ function Achievements() {
     })
     }else{
       window.addEventListener("scroll", ()=>{
-        if(window.scrollY > 4500){
+        if(window.scrollY > 4200){
             setClassForImg("show-image");
             setTrigger(true);
         }

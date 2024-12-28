@@ -38,8 +38,8 @@ const QuoteCard = ({ svgIcon, heading, text }) => {
   const [cardHeight, setCardHeight] = useState(true)
 
   window.addEventListener("scroll", ()=>{
-    if(window.innerWidth > 600){
-    if(window.scrollY > 3900){
+    if(window.innerWidth > 1026){
+    if(window.scrollY > 3800){
       setCardHeight(false)
     }
   }else{

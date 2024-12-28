@@ -6,7 +6,7 @@ import ProcedureSmallScreen from "./smallComponents/ProcedureSmallScreen";
 const Procedure = () => {
 
   return(
-    window.innerWidth > 600 ? <ProcedureBigScreen /> : <ProcedureSmallScreen />
+    window.innerWidth > 1026 ? <ProcedureBigScreen /> : <ProcedureSmallScreen />
   )
 
 };

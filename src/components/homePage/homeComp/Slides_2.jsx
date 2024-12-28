@@ -5,10 +5,9 @@ import { useScroll, useTransform, motion } from "framer-motion";
 function Slides2_howItWorks() {
   return(
     <>
-      {window.innerWidth < 576 ? <ForMobile />: <ForBigScreen />}
+      {window.innerWidth < 1026 ? <ForMobile />: <ForBigScreen />}
     </>
   )
-
 }
 
 
@@ -36,7 +35,8 @@ function ForBigScreen(){
         heading="Receive Confirmation Call"
         text="Receive Confirmation Call from our Pharmacist. They monitor the entire process end-to-end right from examining prescription to preparing your medicine sachets."
         bgColorImg="white"
-        imgSize="540px"
+        scale="scale-[2]"
+        scaleForSmall="scale-[2.5]"
         position="relative"
         imgPosition="absolute"
         image="https://pillup.com/assets/HowItWorks/phonecall.png"
@@ -47,9 +47,9 @@ function ForBigScreen(){
         num="03"
         heading="We sort your & pack you medicines using our gold-standard machines"
         text="Your medicines are then packed in your personalised pouches labelled with your name, medicine name, and quantity, along with the time and date"
-        bgColorImg="transparent"
+        scale="scale-[2.4]"
+        scaleForSmall="scale-[2.4]"
         image="https://pillup.com/assets/sachet.png"
-        imgSize="540px"
         alt="app ui"
       />
         <Slide
@@ -60,7 +60,8 @@ function ForBigScreen(){
         bgColorImg="#CCE5EC"
         image="https://pillup.com/assets/HowItWorks/timeline3.png"
         alt="app ui"
-        imgSize="340px"
+        scale="scale-[1.6]"
+        scaleForSmall="scale-[2]"
       />
     </motion.div>
     </div>
@@ -90,6 +91,7 @@ function ForMobile(){
         bgColorImg="white"
         imgSize="290px"
         position="relative"
+        scaleForSmall='scale-[2.3]'
         imgPosition="absolute"
         image="https://pillup.com/assets/HowItWorks/phonecall.png"
         alt="app ui"
@@ -101,6 +103,7 @@ function ForMobile(){
         text="Your medicines are then packed in your personalised pouches labelled with your name, medicine name, and quantity, along with the time and date"
         bgColorImg="transparent"
         image="https://pillup.com/assets/sachet.png"
+        scaleForSmall='scale-[2.3]'
         imgSize="270px"
         alt="app ui"
       />
@@ -112,6 +115,7 @@ function ForMobile(){
         bgColorImg="#CCE5EC"
         image="https://pillup.com/assets/HowItWorks/timeline3.png"
         alt="app ui"
+        scaleForSmall='scale-[1.8]'
         imgSize="200px"
       />  
     </div>

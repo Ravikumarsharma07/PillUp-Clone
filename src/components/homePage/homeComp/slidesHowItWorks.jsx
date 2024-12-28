@@ -21,7 +21,7 @@ const SlidesHowItWorks = () => {
   return (  
     <>
 
-      {width < 576 ? <MainContentForSmallScreen /> : <MainContentForBigScreen />}  
+      {width < 776 ? <MainContentForSmallScreen /> : <MainContentForBigScreen />}  
     
     </>    
   );

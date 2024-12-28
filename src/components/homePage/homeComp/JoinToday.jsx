@@ -3,7 +3,7 @@ import { useState } from "react";
 const JoinToday = () => {
   const [isTransition, setTransition] = useState(false);
 
-  if (window.innerWidth < 576) {
+  if (window.innerWidth < 776) {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 11200) {
         setTransition(true);
@@ -11,16 +11,18 @@ const JoinToday = () => {
     });
   } else {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 7600) {
+      if (window.scrollY > 7200) {
         setTransition(true);
+      }else{
+        setTransition(false)
       }
     }); 
   }
 
   return (
-    <section className="flex flex-col justify-center items-center bg-[#ffe3ce] h-[70vh] sm:p-24 px-2 py-6">
+    <section className="flex flex-col justify-center items-center bg-[#ffe3ce] h-[70vh] sm:p-2 md:p-6 lg:p-24 px-2 py-6">
       <h3
-        className={`text-[22px] sm:text-[35px] font-medium sm:font-semibold tracking-wide text-center px-1 sm:px-16 font-sans leading-10 sm:leading-[70px] `}
+        className={`text-[22px] sm:text-[28px] lg:text-[35px] font-medium sm:font-semibold tracking-wide text-center px-1 sm:px-16 font-sans leading-10 sm:leading-[70px] `}
       >
         <span className={`custom-transition delay-0   ${ isTransition ? "opacity-100 top-[0px]" : "opacity-0 top-[30px]"} `}>Your</span>
         <span className={`custom-transition delay-100 ${ isTransition ? "opacity-100 top-[0px]" : "opacity-0 top-[30px]"} `}> online</span>

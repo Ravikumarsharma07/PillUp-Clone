@@ -3,7 +3,7 @@ import "./styles/pageFour.css";
 const  ContactPage = () => {
   return(
     <>
-      {window.innerWidth > 576 ? <ForBigScreen /> : <ForMobile />}
+      {window.innerWidth > 776 ? <ForBigScreen /> : <ForMobile />}
     </>
   )
 }
@@ -24,7 +24,7 @@ function ForMobile(){
 
 function ForBigScreen(){
 return (
-  <section className="home-section-4">
+  <section className="home-section-4 p-10 lg:p-20">
     <div className="section-4-box-1">
       <img src="https://pillup.com/assets/quoteElement1.svg" alt="design" />
       <img src="https://pillup.com/assets/quoteImg.png" alt="person" />
